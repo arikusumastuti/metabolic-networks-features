@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import LoadingScreen from "./LoadingScreen";
 import FilterTools from "./FilterTools";
+import { FaChevronUp } from "react-icons/fa6";
+import ScrollToTop from "./ScrollToTop";
 
 export default function DisplayData ({ folderId }) {
     const [isFetchCompleted, setIsFetchCompleted] = useState(false); // Status fetch
@@ -68,6 +70,7 @@ export default function DisplayData ({ folderId }) {
                                 )
                             })}
                         </div>
+                        <ScrollToTop />
                     </>
                 ) : <LoadingScreen />}
             </div>
