@@ -1,11 +1,16 @@
 'use client'
 
-export default function Overview() {
+import DisplayData from "@/components/DisplayData";
+
+export default function TM2() {
+    const folderId = "1etcvjuX2t71ha9BPbMmozctkRJ85g68C";
+
     return (
         <div className="relative flex items-center justify-center gap-16 px-8 py-16">
             <div className="w-full text-center mb-7">
-                <h3 className="mt-3.5 text-3xl font-bold text-blue-500">Overview</h3>
+                <h3 className="mt-3.5 text-3xl font-bold text-blue-500">MinSum T2DM TM2</h3>
                 <p className="xl:w-2/3 mt-3.5 mx-auto font-medium">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+                <DisplayData folderId={folderId} />
             </div>
         </div>
     );

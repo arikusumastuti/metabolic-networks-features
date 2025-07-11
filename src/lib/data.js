@@ -6,138 +6,7 @@ const sidebarConfig = [
         subs: [],
     },
     {
-        text: 'PPI',
-        href: null,
-        icon: null,
-        subs: [
-            {
-                text: 'GLUT4 Translocation',
-                href: null,
-                icon: null,
-                subs: [
-                    {
-                        text: 'Compartments',
-                        href: '/ppi/glut4-translocation/compartments',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Proteins',
-                        href: '/ppi/glut4-translocation/proteins',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Parameters',
-                        href: '/ppi/glut4-translocation/parameters',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/ppi/glut4-translocation/reactions',
-                        icon: null,
-                        subs: []
-                    },
-                ]
-            },
-            {
-                text: 'GLUT4 Distranslocation',
-                href: null,
-                icon: null,
-                subs: [
-                    {
-                        text: 'Compartments',
-                        href: '/ppi/glut4-distranslocation/compartments',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Proteins',
-                        href: '/ppi/glut4-distranslocation/proteins',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Parameters',
-                        href: '/ppi/glut4-distranslocation/parameters',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/ppi/glut4-distranslocation/reactions',
-                        icon: null,
-                        subs: []
-                    },
-                ]
-            },
-            {
-                text: 'Sythesis Protein (AMPK based)',
-                href: null,
-                icon: null,
-                subs: [
-                    {
-                        text: 'Compartments',
-                        href: '/ppi/synthesis-protein-ampk/compartments',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Proteins',
-                        href: '/ppi/synthesis-protein-ampk/proteins',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Parameters',
-                        href: '/ppi/synthesis-protein-ampk/parameters',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/ppi/synthesis-protein-ampk/reactions',
-                        icon: null,
-                        subs: []
-                    },
-                ]
-            },
-            {
-                text: 'Sythesis Protein (mTOR based)',
-                href: null,
-                icon: null,
-                subs: [
-                    {
-                        text: 'Compartments',
-                        href: '/ppi/synthesis-protein-mtor/compartments',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Proteins',
-                        href: '/ppi/synthesis-protein-mtor/proteins',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Parameters',
-                        href: '/ppi/synthesis-protein-mtor/parameters',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/ppi/synthesis-protein-mtor/reactions',
-                        icon: null,
-                        subs: []
-                    },
-                ]
-            },
-        ]
-    },
-    {
-        text: 'Metabolic Networks',
+        text: 'Met2MetGraph',
         href: null,
         icon: null,
         subs: [
@@ -147,28 +16,133 @@ const sidebarConfig = [
                 icon: null,
                 subs: [
                     {
-                        text: 'Compartments',
-                        href: '/metabolic-networks/t2dm/compartments',
+                        text: 'meanSum',
+                        href: null,
                         icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/t2dm/meansum/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/t2dm/meansum/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/t2dm/meansum/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/t2dm/meansum/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/t2dm/meansum/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/t2dm/meansum/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                     {
-                        text: 'Metabolites',
-                        href: '/metabolic-networks/t2dm/metabolites',
+                        text: 'minSum',
+                        href: null,
                         icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/t2dm/minsum/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/t2dm/minsum/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/t2dm/minsum/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/t2dm/minsum/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/t2dm/minsum/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/t2dm/minsum/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                     {
-                        text: 'Genes',
-                        href: '/metabolic-networks/t2dm/genes',
+                        text: 'minMax',
+                        href: null,
                         icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/metabolic-networks/t2dm/reactions',
-                        icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/t2dm/minmax/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/t2dm/minmax/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/t2dm/minmax/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/t2dm/minmax/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/t2dm/minmax/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/t2dm/minmax/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                 ]
             },
@@ -178,53 +152,133 @@ const sidebarConfig = [
                 icon: null,
                 subs: [
                     {
-                        text: 'Compartments',
-                        href: '/metabolic-networks/liver/compartments',
+                        text: 'meanSum',
+                        href: null,
                         icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/liver/meansum/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/liver/meansum/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/liver/meansum/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/liver/meansum/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/liver/meansum/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/liver/meansum/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                     {
-                        text: 'Metabolites',
-                        href: '/metabolic-networks/liver/metabolites',
+                        text: 'minSum',
+                        href: null,
                         icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/liver/minsum/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/liver/minsum/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/liver/minsum/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/liver/minsum/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/liver/minsum/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/liver/minsum/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                     {
-                        text: 'Genes',
-                        href: '/metabolic-networks/liver/genes',
+                        text: 'minMax',
+                        href: null,
                         icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Reactions',
-                        href: '/metabolic-networks/liver/reactions',
-                        icon: null,
-                        subs: []
-                    },
-                ]
-            },
-            {
-                text: 'Enzymes Sources',
-                href: '/',
-                icon: null,
-                subs: [
-                    {
-                        text: 'T2DM GWAS Catalog',
-                        href: '/metabolic-networks/enzymes-sources/t2dm-gwas-catalog',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Gene Info (GTEX based)',
-                        href: '/metabolic-networks/enzymes-sources/gene-info',
-                        icon: null,
-                        subs: []
-                    },
-                    {
-                        text: 'Abundance Enzymes (Combination from GWAS & Gene Info)',
-                        href: '/metabolic-networks/enzymes-sources/abundance-enzymes',
-                        icon: null,
-                        subs: []
+                        subs: [
+                            {
+                                text: 'MetGraph',
+                                href: '/met2metgraph/liver/minmax/metgraph',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD',
+                                href: '/met2metgraph/liver/minmax/ndd',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM1',
+                                href: '/met2metgraph/liver/minmax/tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'TM2',
+                                href: '/met2metgraph/liver/minmax/tm2',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1',
+                                href: '/met2metgraph/liver/minmax/ndd-tm1',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'NDD+TM1+TM2',
+                                href: '/met2metgraph/liver/minmax/ndd-tm1-tm2',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
                     },
                 ]
             },

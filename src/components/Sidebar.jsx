@@ -6,7 +6,7 @@ import sidebarConfig from "@/lib/data";
 import SidebarItem from "./SidebarItem";
 
 export default function Sidebar() {
-    const [menu, setMenu] = useState(sidebarConfig)
+    const [menu, setMenu] = useState(sidebarConfig);
 
     return (
         <div className="bg-custom">

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import LoadingScreen from "./LoadingScreen";
 import FilterTools from "./FilterTools";
-import { FaChevronUp } from "react-icons/fa6";
 import ScrollToTop from "./ScrollToTop";
 
 export default function DisplayData ({ folderId }) {
