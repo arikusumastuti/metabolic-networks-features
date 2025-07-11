@@ -24,7 +24,10 @@ export default function SidebarItem({text, href, icon, subs}) {
         return (
             <div>
                 <p className="flex items-center justify-between cursor-pointer" onClick={() => setActive(!active)}>
-                    {text}
+                    <span className="flex items-center gap-2">
+                        {icon}
+                        {text}
+                    </span>
                     <FaChevronDown className={`${active ? '-rotate-180' : ''} duration-300`} />
                 </p>
                 <div

@@ -9,7 +9,7 @@ export default function DisplayData ({ folderId }) {
     const [filteredFiles, setFilteredFiles] = useState([]); // Sebagian data dari files yang ingin ditampilkan
     const [displayedFiles, setDisplayedFiles] = useState([]); // Data yang ditampilkan dari filteredFiles
     const [currentPage, setCurrentPage] = useState(0); // Nomor halaman saat ini
-    const [pageSize, setPageSize] = useState(50); // Banyak data yang ditampilkan dalam satu halaman
+    const [pageSize, setPageSize] = useState(100); // Banyak data yang ditampilkan dalam satu halaman
     const [keyword, setKeyword] = useState(''); // Keyword pencarian
 
     useEffect(() => {

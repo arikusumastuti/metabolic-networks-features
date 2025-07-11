@@ -1,3 +1,6 @@
+import { texttospeech } from "googleapis/build/src/apis/texttospeech";
+import { FaReact } from "react-icons/fa6";
+
 const sidebarConfig = [
     {
         text: 'Overview',
@@ -13,7 +16,7 @@ const sidebarConfig = [
             {
                 text: 'T2DM',
                 href: null,
-                icon: null,
+                icon: <FaReact className="text-yellow-500" />,
                 subs: [
                     {
                         text: 'meanSum',
@@ -149,7 +152,7 @@ const sidebarConfig = [
             {
                 text: 'Liver',
                 href: null,
-                icon: null,
+                icon: <FaReact className="text-yellow-500" />,
                 subs: [
                     {
                         text: 'meanSum',
@@ -284,6 +287,299 @@ const sidebarConfig = [
             },
         ]
     },
+    {
+        text: 'Graph Embedding',
+        href: null,
+        icon: null,
+        subs: [
+            {
+                text: 'FeatherGraph',
+                href: null,
+                icon: <FaReact className="text-yellow-500" />,
+                subs: [
+                    {
+                        text: 'Original',
+                        href: '/graph-embedding/feathergraph/original',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized',
+                        href: '/graph-embedding/feathergraph/normalized',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Edges Removal',
+                        href: '/graph-embedding/feathergraph/edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized Edges Removal',
+                        href: '/graph-embedding/feathergraph/normalized-edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                ]
+            },
+            {
+                text: 'GL2Vec',
+                href: null,
+                icon: <FaReact className="text-yellow-500" />,
+                subs: [
+                    {
+                        text: 'Original',
+                        href: '/graph-embedding/gl2vec/original',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized',
+                        href: '/graph-embedding/gl2vec/normalized',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Edges Removal',
+                        href: '/graph-embedding/gl2vec/edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized Edges Removal',
+                        href: '/graph-embedding/gl2vec/normalized-edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                ]
+            },
+            {
+                text: 'Graph2Vec',
+                href: null,
+                icon: <FaReact className="text-yellow-500" />,
+                subs: [
+                    {
+                        text: 'Original',
+                        href: '/graph-embedding/graph2vec/original',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized',
+                        href: '/graph-embedding/graph2vec/normalized',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Edges Removal',
+                        href: '/graph-embedding/graph2vec/edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                    {
+                        text: 'Normalized Edges Removal',
+                        href: '/graph-embedding/graph2vec/normalized-edges-removal',
+                        icon: null,
+                        subs: []
+                    },
+                ]
+            },
+            {
+                text: 'Netpro2vec',
+                href: null,
+                icon: <FaReact className="text-yellow-500" />,
+                subs: [
+                    {
+                        text: 'MetGraph',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/metgraph/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/metgraph/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/metgraph/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/metgraph/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                    {
+                        text: 'NDD',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/ndd/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/ndd/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                    {
+                        text: 'TM1',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/tm1/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/tm1/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/tm1/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/tm1/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                    {
+                        text: 'TM2',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/tm2/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/tm2/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/tm2/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/tm2/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                    {
+                        text: 'NDD+TM1',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                    {
+                        text: 'NDD+TM1+TM2',
+                        href: null,
+                        icon: null,
+                        subs: [
+                            {
+                                text: 'Original',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1-tm2/original',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1-tm2/normalized',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1-tm2/edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                            {
+                                text: 'Normalized Edges Removal',
+                                href: '/graph-embedding/netpro2vec/ndd-tm1-tm2/normalized-edges-removal',
+                                icon: null,
+                                subs: []
+                            },
+                        ]
+                    },
+                ]
+            }
+        ]
+    }
 ]
 
 export default sidebarConfig;
