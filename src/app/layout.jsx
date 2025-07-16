@@ -1,3 +1,4 @@
+import Cover from "@/components/Cover";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import SidebarMobile from "@/components/SidebarMobile";
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         >
             <header></header>
             <main className="flex">
+                <Cover />
                 <div className="xl:hidden h-screen xl:overflow-hidden w-fit xl:w-1/6 z-10">
                     <div className="fixed xl:hidden w-screen h-0 overflow-visible">
                         <SidebarMobile />

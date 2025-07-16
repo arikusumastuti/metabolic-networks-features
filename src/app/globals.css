@@ -28,7 +28,6 @@ body {
 }
 
 .bg-custom {
-  position: relative;
   background: url('../../public/dna_genetics.gif') top left;
   background-size: cover;
   z-index: 9;

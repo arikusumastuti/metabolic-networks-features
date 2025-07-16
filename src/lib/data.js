@@ -15,7 +15,7 @@ const sidebarConfig = [
             {
                 text: 'T2DM',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'meanSum',
@@ -151,7 +151,7 @@ const sidebarConfig = [
             {
                 text: 'Liver',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'meanSum',
@@ -294,7 +294,7 @@ const sidebarConfig = [
             {
                 text: 'FeatherGraph',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'Original',
@@ -325,7 +325,7 @@ const sidebarConfig = [
             {
                 text: 'GL2Vec',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'Original',
@@ -356,7 +356,7 @@ const sidebarConfig = [
             {
                 text: 'Graph2Vec',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'Original',
@@ -387,7 +387,7 @@ const sidebarConfig = [
             {
                 text: 'Netpro2vec',
                 href: null,
-                icon: <FaReact className="text-yellow-500" />,
+                icon: <FaReact className="text-yellow-300" />,
                 subs: [
                     {
                         text: 'MetGraph',

@@ -14,7 +14,7 @@ export default function ScrollToTop () {
     }, []);
 
     return (
-        <div onClick={() => scrollTo(0,0)} className={`${showScrollToTop ? '' : 'hidden'} fixed right-12 bottom-12 w-12 h-12 flex justify-center items-center bg-yellow-500 border-yellow-500 border-2 text-white rounded-full cursor-pointer`}>
+        <div onClick={() => scrollTo(0,0)} className={`${showScrollToTop ? '' : 'hidden'} fixed right-12 bottom-12 w-12 h-12 flex justify-center items-center bg-yellow-300 border-yellow-bg-yellow-300 border-2 text-white rounded-full cursor-pointer`}>
             <FaChevronUp className="text-xl" />
         </div>
     )

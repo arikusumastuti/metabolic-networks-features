@@ -9,7 +9,7 @@ export default function Sidebar() {
     const [menu, setMenu] = useState(sidebarConfig);
 
     return (
-        <div className="bg-custom">
+        <div className="relative bg-custom">
             <div className="h-screen *:text-white overflow-auto scrollbar-hidden pb-4">
                 <Link href="/" className="flex p-4 mb-3 no-underline border-b-[1px]">
                     <span className="text-lg font-semibold border-s-2 ps-2">Metabolic Networks Features</span>
