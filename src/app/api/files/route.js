@@ -1,5 +1,3 @@
-import { getDriveClient } from '@/lib/google';
-
 export async function GET(req) {
     const { searchParams } = new URL(req.url);
     const folderId = searchParams.get('folderId');
@@ -13,20 +11,21 @@ export async function GET(req) {
         });
     }
 
-    const drive = getDriveClient();
-
     try {
         // Mengambil file dalam folder
-        const response = await drive.files.list({
-            q: `'${folderId}' in parents and name contains '${keyword}'`,  // Filter berdasarkan folder ID
-            fields: 'nextPageToken, files(id, name, webViewLink)',  // Ambil ID dan nama file
-            pageSize: pageSize,
-            pageToken: pageToken,
-        });
+        let query;
+        if (keyword != '') {
+            query = `'${folderId}' in parents and name contains '${keyword}'`  // Filter berdasarkan folder ID
+        } else {
+            query = `'${folderId}' in parents`  // Filter berdasarkan folder ID
+        }
+
+        const response = await fetch(`https://www.googleapis.com/drive/v3/files?key=${process.env.GOOGLE_API_KEY}&q=${query}&fields=nextPageToken, files(id, name, webViewLink)&pageSize=${pageSize}&pageToken=${pageToken}`, {method: "GET"})
+        
+        const json = await response.json()
         
         // Kirim daftar file sebagai response
-        // res.status(200).json(response.data.files);
-        return Response.json(response.data);
+        return Response.json(json);
     } catch (error) {
         // res.status(500).json({ error: 'Something went wrong' });
         return Response.json({ error: error, message: 'Something went wrong' });

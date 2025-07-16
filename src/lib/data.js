@@ -1,4 +1,3 @@
-import { texttospeech } from "googleapis/build/src/apis/texttospeech";
 import { FaReact } from "react-icons/fa6";
 
 const sidebarConfig = [

@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from "react";
 import LoadingScreen from "./LoadingScreen";
 import FilterTools from "./FilterTools";
