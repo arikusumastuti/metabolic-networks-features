@@ -79,9 +79,9 @@ export default function DisplayData ({ folderId }) {
     )
 }
 
-function Item ({ id, name, webViewLink, onClick}) {
+function Item ({ id, name, webViewLink }) {
     return (
-        <a id={id} className="bg-blue-950 text-white p-4 overflow-hidden rounded-2xl" href={webViewLink} target="_blank" onClick={onClick}>
+        <a id={id} className="bg-blue-950 text-white p-4 overflow-hidden rounded-2xl" href={webViewLink} target="_blank">
             <p>{name}</p>
         </a>
     )
