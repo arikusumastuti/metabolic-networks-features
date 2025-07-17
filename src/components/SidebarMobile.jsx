@@ -16,11 +16,11 @@ export default function SidebarMobile() {
                 <FaBars className="text-2xl" onClick={() => setShow(!show)} />
             </div>
             <div className={`absolute ${show ? '' : '-translate-x-full'} transform w-5/6 bg-custom`}>
-                <div className="*:text-white h-screen overflow-auto pb-4">
+                <div className="*:text-white h-screen flex flex-col pb-4">
                     <Link href="/" className="flex p-4 mb-3 no-underline border-b-[1px]">
                         <span className="text-lg font-semibold border-s-2 ps-2">Metabolic Networks Features</span>
                     </Link>
-                    <div className="flex flex-col px-4 py-2 gap-4 *:text-[.9rem] *:mb-0 select-none">
+                    <div className="h-full flex flex-col px-4 py-2 gap-4 *:text-[.9rem] *:mb-0 select-none overflow-auto">
                         {menu.map((item, index) => <SidebarItem key={index} {...item} />)}
                     </div>
                 </div>

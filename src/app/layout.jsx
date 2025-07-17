@@ -27,8 +27,13 @@ export default function RootLayout({ children }) {
                 </div>
                 <div className="hidden xl:block w-1/6">
                 </div>
-                <div className="w-full xl:w-5/6 min-h-screen overflow-auto bg-yellow-50">
-                    {children}
+                <div className="w-full xl:w-5/6 min-h-screen flex flex-col overflow-auto bg-yellow-50">
+                    <div className="h-full">
+                        {children}
+                    </div>
+                    <footer className="w-full h-16 flex items-center px-8 text-sm">
+                        <p>Copyright &copy; 2025 Ari Kusumastuti and Akhmad Roziqin</p>
+                    </footer>
                 </div>
             </main>
             <footer></footer>
