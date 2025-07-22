@@ -4,14 +4,14 @@ export default function Overview() {
     return (
         <div className="flex flex-col items-center justify-center px-8 py-16">
             <div className="w-full text-center mb-7">
-                <h3 className="mt-3.5 text-3xl font-bold text-blue-500">Overview</h3>
+                <h3 className="mt-3.5 text-3xl font-bold text-blue-500">Metabolic Networks Features</h3>
                 <p className="xl:w-2/3 mt-3.5 mx-auto font-medium">Including all features of T2DM extracted from GTEx patient data and specific tissues (T2DM & Liver - Pancreas).</p>
             </div>
             <div className="md:w-3/4 space-y-4 text-justify bg-white p-8 rounded-2xl shadow-xl">
                 <section>
                     <h2 className="font-bold">Met2MetGraph</h2>
                     <p>This repository contains metabolic network features extracted from sample patient data, including Type 2 Diabetes Mellitus (T2DM)-related tissue data and liver-pancreas tissue data. The repository is divided into two main sections:</p>
-                    <ol className="list-decimal list-inside ps-4">
+                    <ol className="list-decimal list-inside ps-4 font-bold">
                         <li>T2DM Features</li>
                         <li>Liver Features</li>
                     </ol>
@@ -28,7 +28,7 @@ export default function Overview() {
                 <section>
                     <h2 className="font-bold">Graph Embedding</h2>
                     <p>We employ several graph embedding algorithms, including:</p>
-                    <ol className="list-decimal list-inside ps-4">
+                    <ol className="list-decimal list-inside ps-4 font-bold">
                         <li>Graph2Vec</li>
                         <li>GL2Vec</li>
                         <li>FeatherGraph</li>

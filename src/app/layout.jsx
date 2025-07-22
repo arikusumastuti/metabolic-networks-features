@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                 </div>
                 <div className="hidden xl:block w-1/6">
                 </div>
-                <div className="w-full xl:w-5/6 min-h-screen flex flex-col overflow-auto bg-yellow-50">
+                <div className="w-full xl:w-5/6 min-h-screen flex flex-col bg-yellow-50">
                     <div className="h-full">
                         {children}
                     </div>
