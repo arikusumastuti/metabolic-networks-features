@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 
-export default function SidebarItem({text, href, icon, subs}) {
+export default function SidebarItem({text, href, icon, subs, onClick}) {
     if (subs.length > 0) {
         const [active, setActive] = useState(false);
         const contentRef = useRef(null);
@@ -45,10 +45,12 @@ export default function SidebarItem({text, href, icon, subs}) {
         );
     } else {
         return (
-            <Link className="flex items-center gap-2" href={href ?? '/'}>
-                {icon && <span className="text-lg">{icon}</span>}
-                {text}
-            </Link>
+            <div onClick={onClick}>
+                <Link className="flex items-center gap-2" href={href ?? '/'}>
+                    {icon && <span className="text-lg">{icon}</span>}
+                    {text}
+                </Link>
+            </div>
         );
     }
 }
