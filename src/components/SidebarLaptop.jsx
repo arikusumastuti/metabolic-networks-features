@@ -6,7 +6,7 @@ import sidebarConfig from "@/lib/data";
 import SidebarItem from "./SidebarItem";
 import Logo from "./Logo";
 
-export default function Sidebar() {
+export default function SidebarLaptop() {
     const [menu, setMenu] = useState(sidebarConfig);
 
     return (

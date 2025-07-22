@@ -1,6 +1,6 @@
 import "./globals.css";
 import Cover from "@/components/Cover";
-import Sidebar from "@/components/Sidebar";
+import SidebarLaptop from "@/components/SidebarLaptop";
 import SidebarMobile from "@/components/SidebarMobile";
 import Footer from "@/components/Footer";
 
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
                     </div>
                 </div>
                 <div className="hidden xl:block w-1/6 xl:fixed">
-                    <Sidebar />
+                    <SidebarLaptop />
                 </div>
                 <div className="hidden xl:block w-1/6">
                 </div>
