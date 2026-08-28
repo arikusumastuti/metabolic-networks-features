@@ -4,7 +4,7 @@ import icon from "../app/favicon.ico";
 
 export default function Logo ({ className="" }) {
     return (
-        <Link href="https://biomath.work/" className={`flex items-center gap-2 ${className}`}>
+        <Link href="https://bio-math.work/" className={`flex items-center gap-2 ${className}`}>
             <Image src={icon} alt="logo" className="h-8 w-8" />
             <span className="font-bold">T2DM Repository</span>
         </Link>
